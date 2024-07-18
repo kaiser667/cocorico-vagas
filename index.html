@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas cocoricó</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://imagepng.org/wp-content/uploads/2019/04/bola-de-voleibol-768x768.png" type="image/x-icon">
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="" src="" alt="">
+        <h1>Vagas cocoricó</h1>
+        <h2>Turma de sábado</h2>
+    </div>
+    <div class="container">
+        <div id="button-container">
+            <button id="click-button" onclick="handleClick()">Clique aqui</button>
+            <div id="click-count">Vagas preenchidas: 0</div>
+            <div id="user-list"></div>
+        </div>
+        <div id="login-container">
+            <button id="login-button" onclick="login()">Login com Google</button>
+            <button id="logout-button" onclick="logout()" style="display: none;">Logout</button>
+        </div>
+    </div>
+    <footer>
+        <p>R. Otávio Perreti, 114 - Vila Assis Brasil, Mauá - SP</p>
+    </footer>
+    <button id="reset-button" onclick="resetCount()">Resetar Contagem e Nomes</button>
+    <img class="corner-image" src="https://cdn.pixabay.com/photo/2014/04/02/10/24/rooster-303751_960_720.png" alt="Imagem de canto superior direito">
+    <script src="app.js"></script>
+</body>
+</html>
